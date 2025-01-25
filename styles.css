@@ -95,6 +95,24 @@ nav a:hover {
 
 .question {
     margin-bottom: 1.5rem;
+    background-color: var(--card-bg);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.question:hover {
+    background-color: var(--nav-hover);
+}
+
+.question.collapsed {
+    overflow: hidden;
+    max-height: 0;
+    padding: 0;
+    margin: 0 0 1rem;
+    transition: all 0.5s ease;
 }
 
 .question label {
@@ -102,6 +120,26 @@ nav a:hover {
     margin-bottom: 0.5rem;
     font-size: 1.1rem;
     font-weight: bold;
+    cursor: pointer;
+}
+
+.options {
+    display: none;
+    padding-top: 0.5rem;
+    padding-left: 1rem;
+}
+
+.options.active {
+    display: block;
+}
+
+.option {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+.option input {
+    margin-right: 0.5rem;
 }
 
 .results {
