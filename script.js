@@ -21,19 +21,19 @@ const universities = [
         description: "World-class education and research opportunities.",
         focus: ["Arts", "Sciences", "Business"],
     },
-    // Add the remaining 18 universities here...
+   
 ];
 
-// Attach Events on Load
+
 document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("homeLink").addEventListener("click", showLandingPage);
     document.getElementById("quizLink").addEventListener("click", showQuizPage);
     document.getElementById("searchLink").addEventListener("click", showSearchPage);
 
-    showLandingPage(); // Load the landing page on startup
+    showLandingPage();
 });
 
-// Show Landing Page
+
 function showLandingPage() {
     const content = document.getElementById("content");
     content.innerHTML = `
@@ -46,7 +46,7 @@ function showLandingPage() {
     `;
 }
 
-// Show Quiz Page
+
 function showQuizPage() {
     const content = document.getElementById("content");
     content.innerHTML = `
@@ -86,7 +86,7 @@ function showQuizPage() {
     `;
 }
 
-// Process Quiz
+
 function processQuiz() {
     const field = document.getElementById("field").value;
     const location = document.getElementById("location").value;
@@ -104,7 +104,6 @@ function processQuiz() {
     displayResults(filteredUniversities);
 }
 
-// Display Results
 function displayResults(universities) {
     const content = document.getElementById("content");
     content.innerHTML = universities.length
