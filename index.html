@@ -1,24 +1,33 @@
-<!DOCTYPE html>
+v<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>University Finder</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>University Finder</h1>
-        <button id="themeToggle" class="theme-toggle">Switch Theme</button>
+        <h1>🎓 University Finder</h1>
+        <button id="themeToggle" class="theme-toggle">🌙</button>
     </header>
     <nav>
-        <a id="homeLink" href="#">Home</a>
-        <a id="quizLink" href="#">Take the Quiz</a>
-        <a id="searchLink" href="#">Search Universities</a>
+        <ul class="navbar">
+            <li><a id="homeLink" href="#">Home</a></li>
+            <li><a id="quizLink" href="#">Quiz</a></li>
+            <li><a id="searchLink" href="#">Search</a></li>
+            <li><a id="favoritesLink" href="#">Favorites</a></li>
+        </ul>
     </nav>
-    <div class="container" id="content">
-        <!-- Content will be dynamically loaded here -->
-    </div>
+    <main>
+        <div class="container" id="content">
+            <!-- Dynamic content will load here -->
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 University Finder | Your Education, Simplified.</p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
